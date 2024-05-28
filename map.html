@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header header__main">
+            <div class="container">
+                <div class="header__content">
+                    <button class="header__burger">
+                        <svg width="60" height="42" viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60 19H0V23H60V19Z" fill="#1D1D1B" />
+                            <path d="M60 0H0V4H60V0Z" fill="#1D1D1B" />
+                            <path d="M60 38H0V42H60V38Z" fill="#1D1D1B" />
+                        </svg>
+                    </button>
+                    <a class="header__content-link" href="index.html">
+                        <img class="header__content-link__img" src="images/logo-img.png" alt="">
+                    </a>
+                    <button class="darkmode__btn">
+                        <svg class="darkmode__btn-img" width="80" height="110" viewBox="0 0 80 110" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M48.0094 98.2163H32.0124C29.891 98.2163 27.8566 97.3886 26.3566 95.9154C24.8566 94.4421 24.0139 92.444 24.0139 90.3605V75.2774C16.6881 72.1415 10.4868 66.9219 6.20984 60.2918C1.93287 53.6618 -0.223666 45.9253 0.0183506 38.0801C0.459037 28.1247 4.68337 18.6931 11.8576 11.6468C19.0318 4.60057 28.6348 0.451612 38.7711 0.0187869C48.0603 -0.263401 57.1597 2.64073 64.5056 8.2322C71.8515 13.8237 76.9853 21.7533 79.025 30.6587C81.0646 39.5641 79.8827 48.8891 75.6823 57.0315C71.4819 65.174 64.5253 71.6254 56.0079 75.2774V90.3605C56.0079 92.444 55.1652 94.4421 53.6651 95.9154C52.1651 97.3886 50.1307 98.2163 48.0094 98.2163ZM39.011 7.87459C30.9071 8.22971 23.232 11.5509 17.496 17.1846C11.7599 22.8183 8.37842 30.3565 8.01685 38.3158C7.80705 44.9771 9.75901 51.5314 13.5907 57.0316C17.4223 62.5318 22.9353 66.6931 29.3329 68.9142C30.1133 69.1821 30.79 69.681 31.2698 70.3422C31.7496 71.0034 32.0091 71.7944 32.0124 72.6064V90.3605H48.0094V72.6064C48.0126 71.7944 48.2721 71.0034 48.7519 70.3422C49.2317 69.681 49.9084 69.1821 50.6888 68.9142C55.8185 67.1283 60.3995 64.0868 63.9986 60.0773C67.5978 56.0678 70.096 51.2228 71.2571 46.0006C72.4182 40.7784 72.2038 35.3516 70.6341 30.2335C69.0644 25.1154 66.1914 20.4751 62.2867 16.7516C59.2316 13.787 55.5896 11.4696 51.5861 9.94265C47.5825 8.41576 43.3026 7.71189 39.011 7.87459Z"
+                                fill="black" />
+                            <path
+                                d="M52.0087 110H28.0132C26.9525 110 25.9353 109.586 25.1853 108.85C24.4353 108.113 24.0139 107.114 24.0139 106.072C24.0139 105.03 24.4353 104.031 25.1853 103.295C25.9353 102.558 26.9525 102.144 28.0132 102.144H52.0087C53.0693 102.144 54.0866 102.558 54.8366 103.295C55.5866 104.031 56.0079 105.03 56.0079 106.072C56.0079 107.114 55.5866 108.113 54.8366 108.85C54.0866 109.586 53.0693 110 52.0087 110Z"
+                                fill="black" />
+                            <path
+                                d="M36.0116 86.4326V68.6785C28.814 66.183 22.6105 61.5049 18.2972 55.3199C13.984 49.1349 11.7843 41.7633 12.0161 34.2701C12.376 22.4864 18.8548 14.9055 30.0927 9.44573C13.9757 9.72069 4.49749 23.5862 4.01758 38.198C3.78583 45.6912 5.98548 53.0628 10.2987 59.2478C14.612 65.4328 20.8155 70.1109 28.0131 72.6064V90.3605C28.0131 91.4022 28.4344 92.4013 29.1844 93.1379C29.9344 93.8746 30.9517 94.2884 32.0123 94.2884H48.0093C49.07 94.2884 50.0872 93.8746 50.8372 93.1379C51.5872 92.4013 52.0086 91.4022 52.0086 90.3605H40.0108C38.9502 90.3605 37.9329 89.9467 37.1829 89.21C36.4329 88.4734 36.0116 87.4743 36.0116 86.4326Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main" style="background-image: url(images/background.png);">
+            <div class="darkmode__mask">
+                <nav class="navigation --navigation-menu">
+                    <div class="container">
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="#">
+                                    <svg class="navigation__list-link__img" width="60" height="60" viewBox="0 0 60 60"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.4285 31.2021C21.4285 27.2222 22.8571 23.3559 25.4081 20.5131C27.551 18.1251 30.3061 16.6469 33.1632 16.192V8.3458L18.8775 0.613312V51.5568L33.1632 59.2892V46.0985C30.3061 45.6437 27.551 44.2791 25.4081 41.7774C22.7551 39.0483 21.4285 35.1821 21.4285 31.2021Z"
+                                            fill="black" />
+                                        <path
+                                            d="M53.0613 0.272215C52.5511 -0.0689239 51.9388 -0.0689243 51.4286 0.158502L36.6327 8.34584V16.192C39.5919 16.6469 42.449 18.1252 44.5919 20.5131C47.1429 23.356 48.5715 27.1085 48.5715 31.2022C48.5715 34.6136 47.5511 37.7975 45.7143 40.4129L54.1837 49.8511L53.8776 1.8642C53.8776 1.18192 53.5715 0.613354 53.0613 0.272215Z"
+                                            fill="black" />
+                                        <path
+                                            d="M15.4082 0.727081L0.918369 9.71041C0.408165 10.0516 0 10.7338 0 11.4161V58.0385C0 58.7207 0.306124 59.403 0.816328 59.7442C1.32653 60.0853 2.04082 60.0853 2.55102 59.7442L15.3061 51.7842V0.727081H15.4082Z"
+                                            fill="black" />
+                                        <path
+                                            d="M36.6326 46.0986V59.2893L51.7347 52.4665L43.2653 43.0284C41.2245 44.8478 38.9796 45.8712 36.6326 46.0986Z"
+                                            fill="black" />
+                                        <path
+                                            d="M35 19.9445C32.347 19.9445 29.796 21.0817 27.8572 23.2422C25.9184 25.4028 24.898 28.2456 24.898 31.2021C24.898 34.1587 25.9184 37.0015 27.8572 39.1621C31.8368 43.5969 38.2654 43.5969 42.1429 39.1621C44.0817 37.0015 45.1021 34.1587 45.1021 31.2021C45.1021 28.2456 44.0817 25.4028 42.1429 23.2422C40.2041 21.0817 37.6531 19.9445 35 19.9445Z"
+                                            fill="black" />
+                                        <path
+                                            d="M54.1837 50.0785C54.1837 50.8745 53.7756 51.5568 53.1633 51.8979L51.8368 52.4665L57.5511 58.8344L60.0001 56.1053L54.2858 49.7374L54.1837 50.0785Z"
+                                            fill="black" />
+                                    </svg>
+                                    карта водоисточников</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="table.html">
+                                    <svg class="navigation__list-link__img" width="60" height="60" viewBox="0 0 60 60"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M59.5016 35.8421L56.4812 39L50.2894 32.5263L53.3098 29.3684C53.9441 28.6737 55.0013 28.6737 55.6355 29.3684L59.5016 33.4105C60.1661 34.0737 60.1661 35.1789 59.5016 35.8421ZM30.2039 53.4947L48.5376 34.3579L54.7294 40.8316L36.4259 60H30.2039V53.4947ZM6.04077 0H48.3262C49.9283 0 51.4648 0.665411 52.5977 1.84985C53.7305 3.03429 54.367 4.64074 54.367 6.31579V19.4842L42.7989 31.5789H30.2039V44.7474L24.6766 50.5263H6.04077C4.43866 50.5263 2.90217 49.8609 1.7693 48.6765C0.636437 47.492 0 45.8856 0 44.2105V6.31579C0 4.64074 0.636437 3.03429 1.7693 1.84985C2.90217 0.665411 4.43866 0 6.04077 0ZM6.04077 12.6316V25.2632H24.1631V12.6316H6.04077ZM30.2039 12.6316V25.2632H48.3262V12.6316H30.2039ZM6.04077 31.5789V44.2105H24.1631V31.5789H6.04077Z"
+                                            fill="black" />
+                                    </svg>
+                                    планшет водоисточников</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link" href="calc.html">
+                                    <svg class="navigation__list-link__img" width="60" height="60" viewBox="0 0 60 60"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25 10.4348H15V0H10V10.4348H0V15.6522H10V26.087H15V15.6522H25V10.4348Z"
+                                            fill="black" />
+                                        <path d="M25 39.1304H0V44.3478H25V39.1304Z" fill="black" />
+                                        <path d="M25 52.174H0V57.3913H25V52.174Z" fill="black" />
+                                        <path d="M60 10.4348H35V15.6522H60V10.4348Z" fill="black" />
+                                        <path
+                                            d="M51.025 46.9566L60 37.5913L56.475 33.9131L47.5 43.2783L38.525 33.9131L35 37.5913L43.975 46.9566L35 56.3218L38.525 60L47.5 50.6348L56.475 60L60 56.3218L51.025 46.9566Z"
+                                            fill="black" />
+                                    </svg>
+                                    калькулятор гдзс</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section class="map">
+                    <div class="container">
+                        <div class="map__inner">
+                            <div class="map__map" id="map">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info">
+                    <div class="container">
+                        <div class="info__inner">
+                            <div class="info__time">
+                                <h3 class="section__title">время:</h3>
+                                <div class="info__time-vidget" id="time"></div>
+                            </div>
+                            <div class="info__wheather">
+                                <h3 class="section__title">погода:</h3>
+                                <div class="info__wheather-vidget">
+                                    <div id="ww_165b747383973" v='1.3' loc='auto'
+                                        a='{"t":"horizontal","lang":"ru","ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#616161","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+                                        <a href="https://weatherwidget.org/ru/" id="ww_165b747383973_u"
+                                            target="_blank">Бесплатный HTML погодный информер на сайт</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <h4 class="footer__info-title">обратная связь:</h4>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    <img class="footer__list-link__img" src="images/gmail.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    <img class="footer__list-link__img" src="images/whatsapp.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">
+                                    <img class="footer__list-link__img" src="images/telegram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="footer__logo" href="index.html">
+                        <img class="footer__logo-img" src="images/logo-img.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+    <script src="placemark.js" type="text/javascript"></script>
+
+    <script async src="https://app2.weatherwidget.org/js/?id=ww_165b747383973"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
