@@ -39,86 +39,210 @@ $(function () {
     function init() {
         var myMap = new ymaps.Map("map", {
             center: [65.856469, 74.493631],
-            zoom: 14
+            zoom: 14,
+            controls: ['routeButtonControl']
+
         }, {
             searchControlProvider: 'yandex#search'
         }),
 
             // Создаем геообъект с типом геометрии "Точка".
-            myGeoObject = new ymaps.GeoObject({
-                // Описание геометрии.
-                geometry: {
-                    type: "Point",
-                    coordinates: [65.856469, 74.493631]
-                },
-                // Свойства.
-                properties: {
-                    // Контент метки.
-                    iconContent: 'ПГ-123',
-                    hintContent: 'Тип: наружний; Система: кольцева'
-                }
-            }, {
-                // Опции.
-                // Иконка метки будет растягиваться под размер ее содержимого.
-                preset: 'islands#blackStretchyIcon',
-                // Метку можно перемещать.
-                draggable: false
-            });
+            myGeoObject = new ymaps.GeoObject();
 
 
         myMap.geoObjects
             .add(myGeoObject)
-            .add(new ymaps.Placemark([55.684758, 37.738521], {
-                balloonContent: 'цвет <strong>воды пляжа бонди</strong>'
-            }, {
-                preset: 'islands#icon',
-                iconColor: '#0095b6'
-            }))
-            .add(new ymaps.Placemark([55.833436, 37.715175], {
-                balloonContent: '<strong>серобуромалиновый</strong> цвет'
-            }, {
-                preset: 'islands#dotIcon',
-                iconColor: '#735184'
-            }))
-            .add(new ymaps.Placemark([55.687086, 37.529789], {
-                balloonContent: 'цвет <strong>влюбленной жабы</strong>'
-            }, {
-                preset: 'islands#circleIcon',
-                iconColor: '#3caa3c'
-            }))
-            .add(new ymaps.Placemark([55.782392, 37.614924], {
-                balloonContent: 'цвет <strong>детской неожиданности</strong>'
-            }, {
-                preset: 'islands#circleDotIcon',
-                iconColor: 'yellow'
-            }))
-            .add(new ymaps.Placemark([55.642063, 37.656123], {
-                balloonContent: 'цвет <strong>красный</strong>'
-            }, {
-                preset: 'islands#redSportIcon'
-            }))
-            .add(new ymaps.Placemark([55.826479, 37.487208], {
-                balloonContent: 'цвет <strong>фэйсбука</strong>'
-            }, {
-                preset: 'islands#governmentCircleIcon',
-                iconColor: '#3b5998'
-            }))
-            .add(new ymaps.Placemark([55.694843, 37.435023], {
-                balloonContent: 'цвет <strong>носика Гены</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
-            }, {
-                preset: 'islands#greenDotIconWithCaption'
-            }))
-            .add(new ymaps.Placemark([55.790139, 37.814052], {
-                balloonContent: 'цвет <strong>голубой</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
+            .add(new ymaps.Placemark([65.859503, 74.501579], {
+                balloonContentHeader: '<h4>ПГ-51</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-51'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
-            }));
+            }))
+            .add(new ymaps.Placemark([65.860965, 74.500286], {
+                balloonContentHeader: '<h4>ПГ-57</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-57'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.86059, 74.504193], {
+                balloonContentHeader: '<h4>ПГ-53</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-53'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.861491, 74.501885], {
+                balloonContentHeader: '<h4>ПГ-56</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-56'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.860061, 74.504790], {
+                balloonContentHeader: '<h4>ПГ-52</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-52'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.859691, 74.50382], {
+                balloonContentHeader: '<h4>ПГ-52в</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-52в'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.860421, 74.502103], {
+                balloonContentHeader: '<h4>ПГ-54</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-54'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.860544, 74.501494], {
+                balloonContentHeader: '<h4>ПГ-55</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-55'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.859934, 74.499757], {
+                balloonContentHeader: '<h4>ПГ-60</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-60'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.860520, 74.498458], {
+                balloonContentHeader: '<h4>ПГ-87</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-87'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.861203, 74.496951], {
+                balloonContentHeader: '<h4>ПГ-88</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-88'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.859904, 74.500386], {
+                balloonContentHeader: '<h4>ПГ-8</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-8'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            /* гидранты ул. энергетиков */
+
+            .add(new ymaps.Placemark([65.858969, 74.498263], {
+                balloonContentHeader: '<h4>ПГ-58</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-58'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            .add(new ymaps.Placemark([65.856806, 74.494603], {
+                balloonContentHeader: '<h4>ПГ-112</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-112'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            /* гидранты ул. ленина */
+
+            .add(new ymaps.Placemark([65.860718, 74.495094], {
+                balloonContentHeader: '<h4>ПГ-128</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-128'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            /* гидранты ул. звёздная */
+
+            .add(new ymaps.Placemark([65.859712, 74.495963], {
+                balloonContentHeader: '<h4>ПГ-130</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-130'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            /* гидранты ул. спортивная */
+
+            .add(new ymaps.Placemark([65.840714, 74.460534], {
+                balloonContentHeader: '<h4>ПГ-41</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: тупиковая',
+                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-41'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+        /* гидранты пр-д Медвежье */
+
+
+        let control = myMap.controls.get('routeButtonControl')
+
+        // Зададим координаты пункта отправления с помощью геолокации.
+        control.routePanel.geolocate('from')
+
+        // Откроем панель для построения маршрутов.
+        control.state.set('expanded', true)
+
+        myMap.events.add('click', function (e) {
+            if (!myMap.balloon.isOpen()) {
+                var coords = e.get('coords');
+                myMap.balloon.open(coords, {
+                    contentHeader: 'Координаты точки:',
+                    contentBody: '<p>Широта:<br></p>' + coords[0].toPrecision(6) +
+                        '<p>Долгота:<br>' + coords[1].toPrecision(6)
+                });
+            }
+            else {
+                myMap.balloon.close();
+            }
+        });
+
+        // Скрываем хинт при открытии балуна.
+        myMap.events.add('balloonopen', function (e) {
+            myMap.hint.close();
+        });
     }
-
-
 });
 
 function searchTable() {
@@ -141,38 +265,66 @@ function searchTable() {
     }
 }
 
-function sortTable() {
+$(function () {
 
-    const table = document.querySelector("#table");
-    const th = table.querySelectorAll("th");
-    let tbody = table.querySelector("tbody");
-    let rows = [...tbody.rows];
+    const table = document.querySelector("#table")
+    const th = table.querySelectorAll("th")
+    const thValOne = th[0]
+    const thValTwo = th[1]
+    let tbody = table.querySelector("tbody")
+    let rows = [...tbody.rows]
 
-    th.forEach((header) => {
-        header.addEventListener("click", function () {
-            let columnIndex = header.cellIndex;
-            let sortDirection =
-                header.getAttribute("data-sort-direction") === "asc" ? "desc" : "asc";
-            header.setAttribute("data-sort-direction", sortDirection);
 
-            rows.sort((a, b) => {
-                let aValue = a.cells[columnIndex].textContent;
-                let bValue = b.cells[columnIndex].textContent;
+    thValOne.addEventListener('click', function () {
+        let sortDirection = thValOne.getAttribute('data-sort-direction') === "asc" ? "desc" : "asc"
+        thValOne.setAttribute('data-sort-direction', sortDirection)
 
-                if (sortDirection === "asc") {
-                    return aValue > bValue ? 1 : -1;
-                } else {
-                    return bValue > aValue ? 1 : -1;
-                }
-            });
+        rows.sort((a, b) => {
+            let aValue = a.cells[0].innerText
+            let bValue = b.cells[0].innerText
 
-            tbody.remove();
-            tbody = document.createElement("tbody");
-            rows.forEach((row) => tbody.appendChild(row));
-            table.appendChild(tbody);
-        });
-    });
-}
+            console.log(aValue, bValue)
+
+            if (sortDirection === "asc") {
+                return parseInt(aValue) > parseInt(bValue) ? 1 : -1
+            } else {
+                return parseInt(bValue) > parseInt(aValue) ? 1 : -1
+            }
+        })
+
+        tbody.remove()
+        tbody = document.createElement("tbody")
+        rows.forEach((row) => tbody.appendChild(row))
+        table.appendChild(tbody)
+    })
+
+    thValTwo.addEventListener('click', function () {
+        let sortDirection = thValTwo.getAttribute('data-sort-direction') === "asc" ? "desc" : "asc"
+        thValTwo.setAttribute('data-sort-direction', sortDirection)
+
+        rows.sort((a, b) => {
+            let aValue = a.cells[1].innerText
+            let bValue = b.cells[1].innerText
+
+            console.log(aValue, bValue)
+
+            if (sortDirection === "asc" || aValue.toLowerCase() < bValue.toLowerCase()) {
+                return -1
+            }
+            if (sortDirection === "desc" || aValue.toLowerCase() > bValue.toLowerCase()) {
+                return 1
+            }
+            return 0
+        })
+
+        tbody.remove()
+        tbody = document.createElement("tbody")
+        rows.forEach((row) => tbody.appendChild(row))
+        table.appendChild(tbody)
+    })
+})
+
+
 
 $('.calculator__btn').on('click', function calc() {
 

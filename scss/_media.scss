@@ -23,7 +23,8 @@
     }
 
     .navigation__list-link,
-    .section__title {
+    .section__title,
+    .usePolicy__title {
         font-size: 42px;
     }
 
@@ -41,7 +42,8 @@
         height: 460px;
     }
 
-    .table {
+    .table,
+    .usePolicy__text {
         font-size: 22px;
     }
 
@@ -58,7 +60,8 @@
         flex-direction: column;
     }
 
-    .footer__info-title {
+    .footer__info-title,
+    .footer__usePolicy {
         font-size: 22px;
     }
 }
@@ -82,7 +85,8 @@
     }
 
     .navigation__list-link,
-    .section__title {
+    .section__title,
+    .usePolicy__title {
         font-size: 36px;
     }
 
@@ -101,7 +105,8 @@
     }
 
     .table,
-    .calc {
+    .calc,
+    .usePolicy__text {
         font-size: 18px;
     }
 
@@ -109,7 +114,8 @@
         gap: 20px;
     }
 
-    .footer__info-title {
+    .footer__info-title,
+    .footer__usePolicy {
         font-size: 18px;
     }
 
@@ -123,7 +129,8 @@
 
     .navigation__list-link,
     .section__title,
-    .info__time-vidget {
+    .info__time-vidget,
+    .usePolicy__title {
         font-size: 28px;
     }
 
@@ -138,7 +145,8 @@
     }
 
     .table,
-    .calc {
+    .calc,
+    .usePolicy__text {
         font-size: 14px;
     }
 
@@ -185,7 +193,8 @@
 
     .navigation__list-link,
     .section__title,
-    .info__time-vidget {
+    .info__time-vidget,
+    .usePolicy__title {
         font-size: 22px;
     }
 
@@ -228,7 +237,8 @@
         min-width: 180px;
     }
 
-    .footer__info-title {
+    .footer__info-title,
+    .footer__usePolicy {
         font-size: 14px;
     }
 
@@ -304,7 +314,8 @@
         height: 18px;
     }
 
-    .footer__info-title {
+    .footer__info-title,
+    .footer__usePolicy {
         font-size: 9px;
     }
 
@@ -318,7 +329,8 @@
 
     .navigation__list-link,
     .section__title,
-    .info__time-vidget {
+    .info__time-vidget,
+    .usePolicy__title {
         font-size: 18px;
     }
 

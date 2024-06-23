@@ -163,8 +163,16 @@
     padding-top: 120px;
 
     &__inner {
+        display: flex;
+        flex-direction: column;
         width: 1200px;
         height: 600px;
+        gap: 10px;
+    }
+
+    &__compas {
+        width: 120px;
+        margin-left: auto;
     }
 
     &__map {
@@ -182,6 +190,14 @@
 
     thead {
         tr {
+            th {
+                cursor: pointer;
+            }
+
+            th:last-child {
+                cursor: auto;
+            }
+
             th:nth-child(1) {
                 min-width: 70px;
             }
@@ -193,6 +209,9 @@
     }
 
     tbody {
+        max-height: 600px;
+        overflow-y: scroll;
+
         tr {
             td:nth-child(1) {
                 min-width: 70px;
@@ -212,6 +231,8 @@
     &__inner {
         display: flex;
         align-items: start;
+        overflow-y: scroll;
+        max-height: 470px;
     }
 
     .table__info {
@@ -369,6 +390,29 @@
     th,
     td {
         border-color: #26284E;
+    }
+}
+
+.usePolicy {
+    padding: 40px 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        max-height: 400px;
+        overflow-y: scroll;
+
+        h4 {
+            padding: 20px 0;
+        }
     }
 }
 
