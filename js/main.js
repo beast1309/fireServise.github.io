@@ -37,14 +37,15 @@ $(function () {
     ymaps.ready(init);
 
     function init() {
-        var myMap = new ymaps.Map("map", {
+        let myMap = new ymaps.Map("map", {
             center: [65.856469, 74.493631],
             zoom: 14,
-            controls: ['routeButtonControl']
+            controls: ['routeButtonControl'],
 
         }, {
             searchControlProvider: 'yandex#search'
         }),
+
 
             // Создаем геообъект с типом геометрии "Точка".
             myGeoObject = new ymaps.GeoObject();
@@ -55,7 +56,7 @@ $(function () {
             .add(new ymaps.Placemark([65.859503, 74.501579], {
                 balloonContentHeader: '<h4>ПГ-51</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/51.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-51'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -64,7 +65,7 @@ $(function () {
             .add(new ymaps.Placemark([65.860965, 74.500286], {
                 balloonContentHeader: '<h4>ПГ-57</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/57.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-57'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -73,7 +74,7 @@ $(function () {
             .add(new ymaps.Placemark([65.86059, 74.504193], {
                 balloonContentHeader: '<h4>ПГ-53</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/53.jpg" height="320" width="240">',
                 iconCaption: 'ПГ-53'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -82,7 +83,7 @@ $(function () {
             .add(new ymaps.Placemark([65.861491, 74.501885], {
                 balloonContentHeader: '<h4>ПГ-56</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/56.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-56'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -106,10 +107,10 @@ $(function () {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
             }))
-            .add(new ymaps.Placemark([65.860421, 74.502103], {
+            .add(new ymaps.Placemark([65.860135, 74.502734], {
                 balloonContentHeader: '<h4>ПГ-54</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/54.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-54'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -118,7 +119,7 @@ $(function () {
             .add(new ymaps.Placemark([65.860544, 74.501494], {
                 balloonContentHeader: '<h4>ПГ-55</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/55.jpg" height="316" width="232">',
                 iconCaption: 'ПГ-55'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -145,7 +146,7 @@ $(function () {
             .add(new ymaps.Placemark([65.861203, 74.496951], {
                 balloonContentHeader: '<h4>ПГ-88</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/88.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-88'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -154,7 +155,7 @@ $(function () {
             .add(new ymaps.Placemark([65.859904, 74.500386], {
                 balloonContentHeader: '<h4>ПГ-8</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/8.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-8'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
@@ -162,11 +163,21 @@ $(function () {
             }))
             /* гидранты ул. энергетиков */
 
-            .add(new ymaps.Placemark([65.858969, 74.498263], {
+            .add(new ymaps.Placemark([65.858945, 74.497512], {
                 balloonContentHeader: '<h4>ПГ-58</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/58.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-58'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.859145, 74.498715], {
+                balloonContentHeader: '<h4>ПГ-59</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/waterObjects/59.jpg" height="252" width="336">',
+                iconCaption: 'ПГ-59'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
@@ -185,8 +196,18 @@ $(function () {
             .add(new ymaps.Placemark([65.860718, 74.495094], {
                 balloonContentHeader: '<h4>ПГ-128</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/128.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-128'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.860236, 74.495029], {
+                balloonContentHeader: '<h4>ПГ-129</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/waterObjects/129.jpg" height="252" width="336">',
+                iconCaption: 'ПГ-129'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
@@ -196,8 +217,18 @@ $(function () {
             .add(new ymaps.Placemark([65.859712, 74.495963], {
                 balloonContentHeader: '<h4>ПГ-130</h4>',
                 balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
-                balloonContentFooter: '<img src="images/pg-kek.jpg" height="150" width="200">',
+                balloonContentFooter: '<img src="images/waterObjects/130.jpg" height="252" width="336">',
                 iconCaption: 'ПГ-130'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.859328, 74.495487], {
+                balloonContentHeader: '<h4>ПГ-131</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="images/waterObjects/131.jpg" height="252" width="336">',
+                iconCaption: 'ПГ-131'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
@@ -226,7 +257,7 @@ $(function () {
 
         myMap.events.add('click', function (e) {
             if (!myMap.balloon.isOpen()) {
-                var coords = e.get('coords');
+                let coords = e.get('coords');
                 myMap.balloon.open(coords, {
                     contentHeader: 'Координаты точки:',
                     contentBody: '<p>Широта:<br></p>' + coords[0].toPrecision(6) +
