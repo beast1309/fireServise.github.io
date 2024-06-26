@@ -1,7 +1,7 @@
 @media (max-width: 1311px) {
     .map__inner {
         width: 1080px;
-        height: 520px;
+        min-height: 520px;
     }
 }
 
@@ -39,7 +39,7 @@
 
     .map__inner {
         width: 900px;
-        height: 460px;
+        min-height: 460px;
     }
 
     .table,
@@ -101,7 +101,7 @@
 
     .map__inner {
         width: 680px;
-        height: 390px;
+        min-height: 390px;
     }
 
     .table,
@@ -141,7 +141,7 @@
 
     .map__inner {
         width: 500px;
-        height: 420px;
+        min-height: 420px;
     }
 
     .table,
@@ -208,7 +208,7 @@
 
     .map__inner {
         width: 420px;
-        height: 420px;
+        min-height: 420px;
     }
 
     .table {
@@ -284,7 +284,7 @@
 
     .map__inner {
         width: 320px;
-        height: 380px;
+        min-height: 380px;
     }
 
     .table,
@@ -336,7 +336,7 @@
 
     .map__inner {
         width: 270px;
-        height: 380px;
+        min-height: 380px;
     }
 
     .table {
