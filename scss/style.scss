@@ -252,8 +252,8 @@
         border-radius: 6px;
         position: absolute;
         z-index: 1;
-        bottom: 10%;
-        right: 150%;
+        top: 15%;
+        right: 115%;
         margin-left: -60px;
         opacity: 0;
         transition: opacity 0.3s;
@@ -262,8 +262,8 @@
     .table__info .table__info-text::after {
         content: "";
         position: absolute;
-        top: 65%;
-        right: -10px;
+        top: 15%;
+        right: -9px;
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
