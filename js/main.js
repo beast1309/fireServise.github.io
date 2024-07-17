@@ -63,6 +63,26 @@ $(function () {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
             }))
+
+            .add(new ymaps.Placemark([65.849295, 74.474673], {
+                balloonContentHeader: '<h4>ПГ-10</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/waterObjects/10.jpg" height="252" width="336">',
+                iconCaption: 'ПГ-10'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.849849, 74.475851], {
+                balloonContentHeader: '<h4>ПГ-11</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/waterObjects/11.jpg" height="252" width="336">',
+                iconCaption: 'ПГ-11'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
             /* гидранты ул. полярников */
 
             .add(new ymaps.Placemark([65.859503, 74.501579], {
@@ -629,6 +649,17 @@ $(function () {
                 iconCaptionMaxWidth: '50'
             }))
             /* гидранты ул. строителей */
+
+            .add(new ymaps.Placemark([65.851567, 74.474375], {
+                balloonContentHeader: '<h4>ПГ-14</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/waterObjects/14.jpg" height="252" width="336">',
+                iconCaption: 'ПГ-14'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+            /* гидранты ул. набережная */
 
             .add(new ymaps.Placemark([65.840714, 74.460534], {
                 balloonContentHeader: '<h4>ПГ-41</h4>',
