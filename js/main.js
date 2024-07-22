@@ -749,6 +749,16 @@ $(function () {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
             }))
+
+            .add(new ymaps.Placemark([65.851394, 74.473606], {
+                balloonContentHeader: '<h4>ПГ-13</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="252" width="336">',
+                iconCaption: 'ПГ-13'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
             /* гидранты ул. набережная */
 
             .add(new ymaps.Placemark([65.849286, 74.477380], {
@@ -803,11 +813,201 @@ $(function () {
             }))
             /* гидранты пр-д Медвежье */
 
-            .add(new ymaps.Placemark([65.845723, 74.469151], {
+            .add(new ymaps.Placemark([65.844504, 74.466424], {
                 balloonContentHeader: '<h4>ПГ-68</h4>',
                 balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
                 balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
                 iconCaption: 'ПГ-68'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.845687, 74.472038], {
+                balloonContentHeader: '<h4>ПГ-65</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-65'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.843993, 74.467498], {
+                balloonContentHeader: '<h4>ПГ-91</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-91'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.844302, 74.465515], {
+                balloonContentHeader: '<h4>ПГ-114</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-114'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.845457, 74.468086], {
+                balloonContentHeader: '<h4>ПГ-64</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-64'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.846379, 74.467022], {
+                balloonContentHeader: '<h4>ПГ-63</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-63'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.847161, 74.469814], {
+                balloonContentHeader: '<h4>ПГ-67</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-67'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.846273, 74.465511], {
+                balloonContentHeader: '<h4>ПГ-1</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-1'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.845667, 74.463749], {
+                balloonContentHeader: '<h4>ПГ-2</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-2'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.841049, 74.471664], {
+                balloonContentHeader: '<h4>ПГ-76</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-76'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.840638, 74.472402], {
+                balloonContentHeader: '<h4>ПГ-75</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-75'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.840484, 74.472682], {
+                balloonContentHeader: '<h4>ПГ-126</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-126'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.840484, 74.472682], {
+                balloonContentHeader: '<h4>ПГ-126</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-126'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.841216, 74.474825], {
+                balloonContentHeader: '<h4>ПГ-77</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-77'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.841644, 74.475118], {
+                balloonContentHeader: '<h4>ПГ-78</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-78'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.850675, 74.506976], {
+                balloonContentHeader: '<h4>ПГ-142</h4>',
+                balloonContentBody: 'Тип: наружний;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-142'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.853236, 74.505489], {
+                balloonContentHeader: '<h4>ПГ-61</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-61'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.851878, 74.505471], {
+                balloonContentHeader: '<h4>ПГ-62</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-62'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.843982, 74.485030], {
+                balloonContentHeader: '<h4>ПГ-90</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-90'
+            }, {
+                preset: 'islands#blueCircleDotIconWithCaption',
+                iconCaptionMaxWidth: '50'
+            }))
+
+            .add(new ymaps.Placemark([65.843210, 74.484300], {
+                balloonContentHeader: '<h4>ПГ-136</h4>',
+                balloonContentBody: 'Тип: подземный;<br>Система: кольцевая',
+                balloonContentFooter: '<img src="./images/pg-kek.jpg" height="150" width="200">',
+                iconCaption: 'ПГ-136'
             }, {
                 preset: 'islands#blueCircleDotIconWithCaption',
                 iconCaptionMaxWidth: '50'
