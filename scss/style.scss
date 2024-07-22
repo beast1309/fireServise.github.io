@@ -177,7 +177,7 @@
 
     &__map {
         width: 100%;
-        height: 580px;
+        height: 70vh;
     }
 }
 
@@ -452,8 +452,12 @@
     background-color: #26284E;
 }
 
-.ymaps-2-1-79-map .ymaps-2-1-79-i-ua_js_yes .ymaps-2-1-79-map-bg .ymaps-2-1-79-islets_map-lang-ru {
-    min-height: 460px;
+.ymaps-2-1-79-map {
+    height: 70vh !important;
+}
+
+.ymaps-2-1-79-map.ymaps-2-1-79-i-ua_js_yes.ymaps-2-1-79-map-bg.ymaps-2-1-79-islets_map-lang-ru {
+    height: 70vh !important;
 }
 
 @import 'media';

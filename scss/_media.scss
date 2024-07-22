@@ -287,6 +287,10 @@
         min-height: 380px;
     }
 
+    .map__map {
+        height: 100vh !important;
+    }
+
     .table,
     .calc {
         font-size: 9px;
